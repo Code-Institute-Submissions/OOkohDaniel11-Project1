@@ -1,0 +1,274 @@
+body{margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+.banner{
+    text-align: right;
+    background-color: black;
+    display: flex;
+}
+.logo{
+    width: fit-content;
+    height: 20vh;
+    
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+    height: 8vh;
+    background-color: black;
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #f0ece2;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f0ece2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.fragranceimg{
+    margin-left: 110px;
+    display: flex;
+    
+}
+.img1.frg-summarry{
+    flex: 1;
+}
+.img1{
+    height: 500px;
+    width: fit-content;
+    margin-left: 90px;
+
+}
+.frg-summarry{
+    text-align: justify;
+    margin-left: 300px;
+   font-size: x-large;
+   color: #f0ece2;
+}
+.imgcontainer{
+    display: flex;
+    margin-left: 110px;
+}
+.img2.fashion-p{
+    flex: 1;
+}
+.img2{
+    
+    height: 500px;
+    width: fit-content;
+    margin-right: 90px;
+    margin-left: 120px;
+    
+}
+.fashion-p{
+    text-align: justify;
+    margin-left: 90px;
+    font-size: large;
+    color: #f0ece2;
+}
+.H1{
+    text-align: left;
+    font-size: 40px;
+    color: #f0ece2;
+    margin-left: 200px;
+}
+.paragraph1{
+    
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 25px;  
+    color: #f0ece2;
+}
+.allsaints-fashion{
+    text-align: left;
+    font-size: xx-large;
+    color: #f0ece2;
+    margin-left: 200px;
+}
+
+.nws-form{
+    text-align: right;
+    color: #f0ece2;
+}
+input{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 15%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: grey;
+    width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0 ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.label1{
+    color: white;
+}
+.label2{
+    color: white;
+}
+.section1{
+    margin: 10;
+}
+.shortsummary1{
+    margin: 15;
+}
+.footer-container{
+    
+    padding: 20px;
+    background-color: black;
+
+}
+.footer-left{
+    text-align: center;
+    color: white;
+    justify-content: space-between;
+}
+
+.fb-logo{
+    height: 30px;
+    width: 40px;
+}
+.twitter-logo{
+    height: 30px;
+    width: 30px;
+}
+.instagram-logo{
+    height: 30px;
+    width: 40px;
+}
+.spn1{
+    color: white;
+}
+/*Contact Css Style Starts Here*/
+.contact{
+    height: 50vh;
+    text-align: justify;
+}
+.label-contact{
+    color: #f0ece2;
+    font-size: 80px;
+    text-align:left;
+    margin-left: 350px;
+}
+input{
+    border: 4px none white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-left: 350px;
+}
+textarea{
+    border: 4px solid white;
+    border-radius: 12px;
+    padding: 15px;
+    height: 10vh;
+    margin-left: 350px;
+}
+.img-bck{
+    text-align: center;
+}
+
+/* About Us CSS Style Starts Here*/
+.abt-container{
+    height: 20vh;
+    text-align: center;
+}
+.Abt-us{
+
+    text-align: center;
+    color: #f0ece2;
+    font-size: 69px;
+
+}
+.intro-container{
+
+}
+.intro{
+    text-align: center;
+    color: #f0ece2;
+    font-size: 30px;
+
+}
+.intro-p{
+    text-align: center;
+    color: #f0ece2;
+    font-size: 25px;
+}
+.maps{
+    text-align: center;
+}
+.address{
+ color: #f0ece2;
+}
+.add{
+    color: #f0ece2;
+}
+/*Products CSS Style Starts Here*/
+.parfum{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    
+}
+details{
+    color: #f0ece2;
+}
+a{
+    color: #f0ece2;
+}
+.incense{
+    height: 44vh;
+}
+.sunset{
+    height: 44vh;
+}
+.metal-wave{
+    height: 44vh;
+}
+.parfum-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.leather-skies{
+    height: 44vh;
+}
+.flora-mortis{
+    height: 44vh;
+}
+.concrete-rain{
+    height: 44vh;
+}
