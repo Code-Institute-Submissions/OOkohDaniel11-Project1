@@ -69,7 +69,7 @@ function onSubmittion(event){
     
 }
 // images slider on homepage
-const slides = document.querySelectorAll(".slides img") //getting the images in the div with class slides 
+const slides = document.querySelectorAll(".slides img"); //getting the images in the div with class slides 
 let slideIndex = 0; //gets the first line 
 let intervalId = null;
 
@@ -79,27 +79,50 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 
 function initializeSlider(){
     if(slides.length > 0){
-        slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 5000);
+        slides[slideIndex].classList.add("displaySlide");//add class displaySlide to all images
+        intervalId = setInterval(nextSlide, 5000);//goes to next slide in 5 seconds
     }
 }
 function showSlide(index){
+
+    //when you reach the end of image it resets it back to the start 
     if(index >= slides.length){
             slideIndex = 0;
+
     }else if(index < 0 ){
             slideIndex = slides.length - 1;
+
     }
+
+    //whe clicking on the next button it removes the class display slide and add it to the next image that will come up
     slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
+        slide.classList.remove("displaySlide"); 
     });
     slides[slideIndex].classList.add("displaySlide");
 }
 function prevSlide(){
-    clearInterval(intervalId)
-    slideIndex--
-    showSlide(slideIndex).style.display ="block"
+    clearInterval(intervalId);
+    slideIndex--;
+    showSlide(slideIndex);
 }
 function nextSlide(){
-    slideIndex++
-    showSlide[slideIndex].style.display ="block"
+    slideIndex++;
+    showSlide[slideIndex];
+}
+//function for when you start srolling it pops up for you to go back to the top
+let thisbutton =  document.getElementById('backtoTop');
+//when user scrolls 20 px it will pop up and show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        thisbutton.style.display = "block";
+    }else{
+        thisbutton.style.display = "none";
+    }
+}
+//when user clicks on button it goes to the top 
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
