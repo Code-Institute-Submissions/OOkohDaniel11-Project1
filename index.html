@@ -7,16 +7,16 @@
         <meta name="keywords" content="Perfumes, craft, maker">
         <meta name="author" content="Daniel Okoh">
         <title>All Saints</title>
-        <link rel="stylesheet" href="images/index.css">
-        <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="favicon (1).ico" type="image/x-icon">
     </head>
     <body>
+        <!--This is the navbar and logo-->
         <div class="banner">
             <br>
             <a href="index.html" aria-label="">
-                <img src=" images/AllSaints-logo.png" alt="All Saints logo" class="logo">
+                <img src="AllSaints-logo.png" alt="All Saints logo" class="logo">
             </a>
-            <!--Navigation-->
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html" aria-label="">Home</a></li>
@@ -29,14 +29,11 @@
         <br>
         <br>
         <br>
-            <!--Header-->
+    <!---this is the first shortsummarry
+    An introductory of the brand-->
             <div class="shortsummary1">
-                <h1 class="H1" aria-label="">
-                    All Saints
-                </h1>
+                <h1 class="H1" aria-label=""><u>Al</u>l Saints</h1>
                     <p class="paragraph1"><b>
-
-
                         Founded in 1994 by Stuart Trevor and Kait Bolongaro, 
                         who was the original womenswear designer at AllSaints and who went on to start Bolongaro Trevor. 
                         AllSaints started as a wholesale menswear brand that sold exclusively to high-end retailers such as Harvey Nichols and Harrods.
@@ -52,31 +49,49 @@
           </div>
           <br>
           <br>
-        <!--Image And Summarry-->
+          <!--this is the second shortsummarry
+        mainly giving an overview of fragrance by allsaints-->
           <div class="fragranceimg" >
-            
                     <a href="products.html">
-                        <img src="images/http___static.theiconic.com.au_p_allsaints-6936-2232861-4.jpg" alt="Image of fragrance collection" aria-label="" class="img1">
+                        <img src="http___static.theiconic.com.au_p_allsaints-6936-2232861-4.jpg" alt="Image of fragrance collection" aria-label="" class="img1">
                     </a>
                 <p class="frg-summarry"><b>
-                    
                     Designer Allsaints has 6 perfumes in its fragrance base. 
                     <br>Allsaints is a new fragrance brand. The earliest edition 
                     <br>was created in 2018 and the newest is from 2021. 
                     <br>The nose who worked on the fragrances is Gabriela Chelariu.
-
+                    <br>Overall, these fragrances smell niche and high end for the price, 
+                    <br>and I believe there is something for everyone, 
+                    <br>since they're all different from each other.
                 </b></p>
           </div>
           <br>
           <br>
           <br>
           <br>
+          <!-- 
+            start of header 2 with a pargraph underneath
+          -->
           <div>
-            <h2 class="allsaints-fashion">
-                AllSaints Fashion
-            </h2>
+            <h2 class="allsaints-fashion"><u>All</u>Saints Fashion</h2>
           </div>
           <br>
+          <div class="fashion1">
+            <p class="paragraph2">
+                By mid-2004, AllSaints had expanded to 10 stores in the UK.
+                Between mid-2004 and the end of 2005, fashion financier Kevin Stanford, 
+                co-founder of womenswear chain Karen Millen, bought out each of AllSaints partners besides Stuart Trevor, 
+                thereby acquiring a majority stake in the company.In December 2005, 
+                Stanford bought Trevor's stake in the company as well.In 2006, 
+                AllSaints sold a 35% stake in the company to Icelandic investment firm, Baugur Group, 
+                with Kevin Stanford remaining the majority shareholder.In late 2006, 
+                the company launched its e-commerce website.
+                In 2016 AllSaints launched its first stores in Italy, Turkey, Chile, Peru and Qatar. Taiwan and Duba
+            </p>
+          </div>
+          <!--
+            image container containig small summary and slides  fo pictures
+          -->
           <div class="imgcontainer">
             <p class="fashion-p"><b>
                 London-based fashion retailer AllSaints made its name designing   
@@ -92,61 +107,75 @@
                 <br>The brand excels at creating collections that reflect 
                 <br>a darkly romantic, “I’m with the band” attitude.
             </b></p>
-            <a href="products.html">
-                <img src="images/AllSaints-Spitalfields-Michigan-Avenue-Chicago-101.jpg" alt="Image of Clothes by All Saint" aria-label="" class="img2">
-            </a>
+            <div class="sliders">
+                    <div class="slides">
+                        <img class="" src="AllSaints-Spitalfields-Michigan-Avenue-Chicago-101.jpg" alt="Image of Clothes by All Saint #1" aria-label="" >
+                        <img class="" src="All-Saints shop.jpeg" alt="Image of Clothes by All Saint #2" aria-label="" >
+                        <img class="" src="WHITE_CITY.jpg" alt="Image of Clothes by All Saint #3" aria-label="" >
+                        <img class="" src="AllSaints-4.jpg" alt="Image of Clothes by All Saint #4" aria-label="" >
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+            
           </div>
           <br>
           <br>
           <br>
           <br>
-        <!-Newsletter form-->
-          <details class="nws-form">
-              <summary>
-                <p>Newsletter</p>
-            </summary>
-                <form >
-                    <p>
-                        To recive newsletter please fill out your  
-                        <br>Confirmation will be sent to your phone number when 
-                        <br>newsletter arrives.
-                        <br>
-                    </p>    
-                 
-                    <label for="fllname">   Full Name:</label>
-                    <input type="text" name="text" id="fllname" placeholder="Enter Name" required>
+<!---button will give a pop up for people to sign-up for a newsletter-->
+        <button data-popup-target="#popup" class="nws-form">
+            <p>Newsletter</p>
+        </button>
+        <div class="pop-up active" id="popup">
+            <div class="popup-header" id="popup-header">
+                <div class="header">Newsletter</div>
+                <button data-close-button class="close-btn">&times;</button>
+            </div>
+            <div class="popup-body">
+                <form id="form" method="POST" action="https://formdump.codeinstitute.net/" target="_blank" >
+                <p class="newslP">
+                    To recive newsletter please fill out your  
+                    <br>Confirmation will be sent to your phone number when 
+                    <br>newsletter arrives.
+                    
+                </p>  
+                <p id="error"></p>  
+                    <label for="fllname" class="fllname-1">   Full Name:</label>
+                    <input type="text" name="text" id="fllname" placeholder="Enter Name" class="name" required>
                     <br>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
-                    <br>
-                    <label for="number">Phone Number:</label>
-                    <input type="text" id="number" name="number" placeholder="Enter Phone Number" required>
+                    <label for="email" class="email-1">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Address" class="email" required>
                     <br>
                     <div class="inpt-send">
-                        <input type="submit" value="Send!" class="send-1" >
+                        <div class="label-number">
+                            <label for="number" class="number-1">Phone Number:</label>
+                            <input type="tel" id="number" name="number" placeholder="Enter Phone Number" class="number" required>
+                            <input type="submit" value="Send!" class="send" >
+                        </div>
                     </div>
                 </form>
-            </details>
-            <br>
-        <!--Footer-->
-          <div class="footer-container">
-                <div class="footer-left">
-                    <footer>
-                        <br>
-                        <a href="https://www.facebook.com/allsaints/" target="_blank"><b><img src="images/fb.png" alt="Facebook logo" class="fb-logo"></b></a>
-                        
-                        <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><b><img src="images/twitter.png" alt="twitter logo" class="twitter-logo"></b></a>
-                        
-                        <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><b><img src="images/ig.png" alt="Instagram Logo" class="instagram-logo"></b></a>
-                        
-                    </footer>   
-                </div>
-          </div>
-                <div class="footer-right">
-                    <footer>
-                        
-                    </footer>  
-                </div>
-          </div> 
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="active" id="overlay"></div>
+<!--footer contains the social media accounts of allsaints-->
+    <div class="footer-container">
+        <div class="footer-left">
+            <footer>
+                <span class="spn1">Find more on this page.</span>
+                <br>
+                <a href="https://www.facebook.com/allsaints/" target="_blank"><b><img src="fb.png" alt="Facebook logo" class="fb-logo"></b></a>
+            
+                <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><b><img src="twitter.png" alt="twitter logo" class="twitter-logo"></b></a>
+            
+                <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><b><img src="ig.png" alt="Instagram Logo" class="instagram-logo"></b></a>
+            
+            </footer>   
+        </div>
+
+    </div> 
+    <script src="index.js"></script>
     </body>
-</html>
+</html> 
