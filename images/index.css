@@ -61,12 +61,14 @@ body{
     text-align: left;
     font-size: 40px;
     color: #f0ece2;
+    margin: 10px 80px 10px 80px;
 }
 .paragraph1{
     
     text-align: justify;
     font-size: 25px;  
     color: #f0ece2;
+    margin: 10px 80px 10px 80px;
 }
 .shortsummary1{
     margin: 15;
@@ -76,27 +78,30 @@ body{
     
     display: flex;
     
+    
 }
 .img1.frg-summarry{
     flex: 1;
+    align-items: center;
 }
 .img1{
     height: 500px;
     width: fit-content;
-    padding-left:90px ;
+    margin: 10px 80px 10px 250px;
 
 }
 .frg-summarry{
     text-align: justify;
-    margin-left: 300px;
-   font-size: x-large;
-   color: #f0ece2;
+    font-size: x-large;
+    color: #f0ece2;
+    margin: 10px 80px 10px 100px;
 }
 /**/
 .allsaints-fashion{
     text-align: left;
     font-size: xx-large;
     color: #f0ece2;
+    margin: 10px 80px 10px 80px;
 }
 .fashion1{
     padding: 10px 40px 40px 10px;
@@ -105,6 +110,7 @@ body{
     text-align: justify;
    font-size: x-large;
    color: #f0ece2;
+   margin: 10px 80px 10px 80px;
 }
 .imgcontainer{
     display: flex;
@@ -164,6 +170,7 @@ body{
     margin-left: 90px;
     font-size: large;
     color: #f0ece2;
+    margin: 10px 50px 10px 250px;
 }
 /*inputs of newsletter form */
 .fllname-1{
