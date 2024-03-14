@@ -1,18 +1,23 @@
-body{margin: 0;
+body{
+    margin: 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 
 }
+/*Index Css Style Starts here*/
+/*banner location line 14 on index html*/
 .banner{
     text-align: right;
     background-color: black;
     display: flex;
 }
+/*logo css*/
 .logo{
     width: fit-content;
     height: 20vh;
     
 }
+/*nav bar style */
 .navbar{
     width: 100%;
     margin: auto;
@@ -31,11 +36,13 @@ body{margin: 0;
     margin: 0 20px;
     position: relative;
 }
+/*no decoration added to it and made text uppercase */
 .navbar ul li a{
     text-decoration: none;
     color: #f0ece2;
     text-transform: uppercase;
 }
+/*applies a underline on text but is hidden and transition out when you hover over text*/
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -49,8 +56,24 @@ body{margin: 0;
 .navbar ul li:hover::after{
     width: 100%;
 }
+/**/
+.H1{
+    text-align: left;
+    font-size: 40px;
+    color: #f0ece2;
+}
+.paragraph1{
+    
+    text-align: justify;
+    font-size: 25px;  
+    color: #f0ece2;
+}
+.shortsummary1{
+    margin: 15;
+}
+/**/
 .fragranceimg{
-    margin-left: 110px;
+    
     display: flex;
     
 }
@@ -60,7 +83,7 @@ body{margin: 0;
 .img1{
     height: 500px;
     width: fit-content;
-    margin-left: 90px;
+    padding-left:90px ;
 
 }
 .frg-summarry{
@@ -69,20 +92,72 @@ body{margin: 0;
    font-size: x-large;
    color: #f0ece2;
 }
+/**/
+.allsaints-fashion{
+    text-align: left;
+    font-size: xx-large;
+    color: #f0ece2;
+}
+.fashion1{
+    padding: 10px 40px 40px 10px;
+}
+.paragraph2{
+    text-align: justify;
+   font-size: x-large;
+   color: #f0ece2;
+}
 .imgcontainer{
     display: flex;
-    margin-left: 110px;
+    
 }
-.img2.fashion-p{
+.fashion-p .sliders{
     flex: 1;
+    justify-content: space-around;
+    
 }
-.img2{
-    
-    height: 500px;
-    width: fit-content;
-    margin-right: 90px;
-    margin-left: 120px;
-    
+/*start of slidshow of pictures */
+.sliders{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides img{
+    width: 50%;
+    display: none;
+}
+.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    height: 200px;
+    width: 50%;
+    margin: 0 auto;
+}
+.sliders button{
+    position: absolute;
+    top: 50%;
+    transform: translate(50%);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: #bbb;
+    color: #f0ece2;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.prev:hover .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+@keyframes fade{
+    form{opacity: .4;}
+    to{opacity: 1;}
 }
 .fashion-p{
     text-align: justify;
@@ -90,40 +165,54 @@ body{margin: 0;
     font-size: large;
     color: #f0ece2;
 }
-.H1{
-    text-align: left;
-    font-size: 40px;
-    color: #f0ece2;
-    margin-left: 200px;
-}
-.paragraph1{
-    
+/*inputs of newsletter form */
+.fllname-1{
     text-align: justify;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-size: 25px;  
-    color: #f0ece2;
 }
-.allsaints-fashion{
-    text-align: left;
-    font-size: xx-large;
-    color: #f0ece2;
-    margin-left: 200px;
-}
-
-.nws-form{
-    text-align: right;
-    color: #f0ece2;
-}
-input{
+input.name{
     border-radius: 20px;
     padding: 15px;
     margin: 10px 0;
-    width: 15%;
+    width: 40%;
     border: 1px solid #999;
     outline: none;
 }
-button{
+input.email{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 40%;
+    border: 1px solid #999;
+    outline: none;
+}
+input.number{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 40%;
+    border: 1px solid #999;
+    outline: none;
+}
+.inpt-send{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: left;
+
+}
+/*div for label*/
+.label-number{
+    flex: 1;
+      
+}
+input[type="submit"] {
+    padding: 20px 20px; /* Adjust padding as needed */
+   
+}
+
+/* newsletter button starting point*/
+
+button.nws-form{
     color: grey;
     width: 10%;
     padding: 10px;
@@ -133,19 +222,69 @@ button{
     border: none;
     outline: none;
     cursor: pointer;
+    
 }
-.label1{
-    color: white;
+.pop-up{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid white;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: grey;
+    width: 500px;
+    max-width: 80%;
 }
-.label2{
-    color: white;
+.pop-up.active{
+    transform: translate(-50%, -50%) scale(1);
 }
-.section1{
-    margin: 10;
+.popup-header{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
 }
-.shortsummary1{
-    margin: 15;
+.popup-header .header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
 }
+button.close-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.popup-body{
+    padding: 10px 15px;
+}
+/*overlay for background when pop up opens*/
+#overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.newslP{
+    text-transform: uppercase;
+    
+}
+/*footer style for all pages*/
 .footer-container{
     
     padding: 20px;
@@ -213,9 +352,7 @@ textarea{
     font-size: 69px;
 
 }
-.intro-container{
 
-}
 .intro{
     text-align: center;
     color: #f0ece2;
