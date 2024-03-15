@@ -1,4 +1,4 @@
-![UI Outlook!}(images/ui.png)
+![UI Outlook!](images/ui.png)
 
 # All Saints Parfum Collection.
 This website is created as an infomation website on perfume(All Saints) and history of it. Discover an aromatic collection of perfumes crafted to enkindle emotions and leave a great impression. This website is a gateway to a world of captivating scents that cater to diverse preferences. This site provides a detailed information on the All Saints Brand giving the how and when it started, how this brand grew to be a household name and a lilttle quiz for our collectors for this brands.
@@ -30,6 +30,8 @@ The purpose of the website is mainly for people who are fans of the brand allsai
 ## Features
 This site implements very basic feature.
 <br>
+
+#### [Back To Top ^ ](#top-of-page) ####
 ## Existing Features
 - **Navigation Bar**
   - Featured on the header all four pages on the right includes Home page, About us Page, Products Page, Contact Page with logo on the left aswell.
@@ -59,6 +61,8 @@ This site implements very basic feature.
     - Quick summarry about products beside images
       <br><br>
       ![Products Page Example!](images/productimg.png)
+
+      #### [Back To Top ^ ](#top-of-page) ####
  
 ## Possible Future Features 
    - Pages for items in product page
@@ -73,6 +77,8 @@ This site implements very basic feature.
   - To add a forum
 
     I want to add a forum where people can talk about the brand and also give thier own experience either buying stuff from the brand or in stores.
+
+    #### [Back To Top ^ ](#top-of-page) ####
 
 ## Testing
 
@@ -94,6 +100,8 @@ This site implements very basic feature.
   
   ![DevTools!](images/devtools.png)
 
+  #### [Back To Top ^ ](#top-of-page) ####
+
 ### Browser Testing
 
 **Layout:** Testing layout and appearance of site for consistency throughout browsers.
@@ -109,6 +117,8 @@ This site implements very basic feature.
 | Safari      |❌    |❌       |
 
 
+#### [Back To Top ^ ](#top-of-page) ####
+
 ### Manual Testing
 
 | Feature     | Expect      | Action        | Result |
@@ -118,6 +128,9 @@ This site implements very basic feature.
 | **Contact link on About page main** | When clicked,the Contact page will open | Click contact link | Contact page opens |
 | **Social link icons** | Social link icons open relevant websites in new tab when clicked| Click all individual icons | All respective sites open in new tab |
 | **Required form fields** | form will not submitif required fields are blank and fields will be highlighted and flagged | Fill out form incorrectly | Form does not submit and highlights incorrectly filled in fields |
+
+
+#### [Back To Top ^ ](#top-of-page) ####
 
 
 ### Deployment
@@ -137,6 +150,8 @@ To run locally:
 
 Alternatively you can **Clone** or **Fork** this repository into your GitHub account.
 
+#### [Back To Top ^ ](#top-of-page) ####
+
 
   
 ## Credits
@@ -147,6 +162,8 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
   
 ### Content
 - Fonts were taken from [W3Schools](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+
+  #### [Back To Top ^ ](#top-of-page) ####
 - CSS color design were taken from [She Codes Coding tool](https://palettes.shecodes.io/palettes/brown/color)
   
 ## License
