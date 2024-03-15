@@ -98,7 +98,7 @@ This site implements very basic feature.
   
 - Performance, Accessibility, SEO, Best Practices ([Lighthouse Chrome DevTools])
   
-  ![Lighthouse Image!](images/lighthouseimg.png)
+  ![Lighthouse Image!](images/Performance pt3.png)
   
 - Accessibility ([axe DevTools](https://axe.deque.com/install-success))
   
