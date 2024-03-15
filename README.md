@@ -30,6 +30,8 @@ The purpose of the website is mainly for people who are fans of the brand allsai
 ## Features
 This site implements very basic feature.
 <br>
+### Wireframe
+[Wireframe Pdf](images/wireframe/project 1 of course.pdf)
 
 #### [Back To Top ^ ](#top-of-page) ####
 ## Existing Features
