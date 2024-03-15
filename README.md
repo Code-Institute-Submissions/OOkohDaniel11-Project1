@@ -41,7 +41,7 @@ The purpose of the website is mainly for people who are fans of the brand allsai
 - Added a back to the top arrow. when user scroll more than 20px on home page and products page it pops up but if not it will stay hidden
   - I got the function off w3Schools and  the symbols off toptal.com
     
-- ![Arrow Button!}(images/scrollup.png)
+- ![Arrow Button!](images/scrollup.png)
   
 - Added a slideshow of images so when you slick on the next or prev button it goes to the other slide
   - next button is not working properly will be fixed
