@@ -116,8 +116,8 @@ This site implements very basic feature.
 | Chrome      |✔️    |✔️       |
 | Edge        | ✔️   |✔️       |
 | Opera       |✔️    |✔️       |
-| Firefox     |❌    |✔️       |
-| Safari      |❌    |❌       |
+| Firefox     |✔️    |✔️       |
+| Safari      |✔️    |✔️     |
 
 
 #### [Back To Top ^ ](#top-of-page) ####
