@@ -31,7 +31,7 @@ The purpose of the website is mainly for people who are fans of the brand allsai
 This site implements very basic feature.
 <br>
 ### Wireframe
-![Wireframe Pdf!](https://github.com/OkohDaniel11/Project1/blob/main/images/wireframe/project%201%20of%20course.pdf)
+[Wireframe Pdf](https://github.com/OkohDaniel11/Project1/blob/main/images/wireframe/project%201%20of%20course.pdf)
 
 #### [Back To Top ^ ](#top-of-page) ####
 ## Existing Features
