@@ -1,0 +1,492 @@
+body{
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+
+}
+/*Index Css Style Starts here*/
+/*banner location line 14 on index html*/
+.banner{
+    text-align: right;
+    background-color: black;
+    display: flex;
+}
+/*logo css*/
+.logo{
+    width: fit-content;
+    height: 20vh;
+    
+}
+/*nav bar style */
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 25px 0;
+    height: 8vh;
+    background-color: black;
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+/*no decoration added to it and made text uppercase */
+.navbar ul li a{
+    text-decoration: none;
+    color: #f0ece2;
+    text-transform: uppercase;
+}
+/*applies a underline on text but is hidden and transition out when you hover over text*/
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #f0ece2;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+/**/
+.H1{
+    text-align: left;
+    font-size: 40px;
+    color: #f0ece2;
+    margin: 10px 80px 10px 80px;
+}
+.paragraph1{
+    
+    text-align: justify;
+    font-size: 25px;  
+    color: #f0ece2;
+    margin: 10px 80px 10px 80px;
+}
+/**/
+.fragranceimg{
+    
+    display: flex;
+    
+    
+}
+.img1.frg-summarry{
+    flex: 1;
+    align-items: center;
+}
+.img1{
+    height: 500px;
+    width: fit-content;
+    margin: 10px 80px 10px 250px;
+
+}
+.frg-summarry{
+    text-align: justify;
+    font-size: x-large;
+    color: #f0ece2;
+    margin: 10px 80px 5px 100px;
+}
+/**/
+
+.allsaints-fashion{
+    text-align: left;
+    font-size: xx-large;
+    color: #f0ece2;
+    margin: 10px 80px 10px 80px;
+}
+
+.paragraph2{
+    text-align: justify;
+   font-size: x-large;
+   color: #f0ece2;
+   margin: 10px 80px 10px 80px;
+}
+.imgcontainer{
+    display: flex;
+    
+}
+.fashion-p .sliders{
+    flex: 1;
+    justify-content: space-around;
+    
+}
+/*start of slidshow of pictures */
+.sliders{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slides img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+.sliders button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: black;
+    color: #f0ece2;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+.prev:hover .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+@keyframes fade{
+    from{opacity: .5;}
+    to{opacity: 1;}
+}
+.fashion-p{
+    text-align: justify;
+    margin-left: 90px;
+    font-size: large;
+    color: #f0ece2;
+    margin: 10px 50px 10px 250px;
+}
+/*inputs of newsletter form */
+.fllname-1{
+    text-align: justify;
+}
+input.name{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 40%;
+    border: 1px solid #999;
+    outline: none;
+}
+input.email{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 40%;
+    border: 1px solid #999;
+    outline: none;
+}
+input.number{
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 40%;
+    border: 1px solid #999;
+    outline: none;
+}
+.inpt-send{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    text-align: left;
+
+}
+/*newsletter number/submit input*/
+.label-number{
+    flex: 1;
+      
+}
+.send{
+    padding: 20px 20px; /* Adjust padding as needed */
+    border-radius: 20px;
+    border: none;
+    
+}
+
+.send:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* newsletter button starting point*/
+.newsform{
+    text-align: center;
+}
+button.nws-form{
+    color: gray;
+    width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0 ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 30px;
+}
+.pop-up{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out; 
+    border: 1px solid white;
+    border-radius: 15px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+.pop-up.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+/**/
+.popup-header{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.popup-header .header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+button.close-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.popup-body{
+    padding: 10px 15px;
+}
+/*overlay for background when pop up opens*/
+#overlay{
+    position: fixed;
+    transition: 200ms ease-in-out;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.newslP{
+    text-transform: uppercase;
+    
+}
+/*ar*/
+#backtoTop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #f0ece2;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+}
+#backtoTop:hover{
+    background-color: #f0ece2;
+}
+
+
+/*Contact Css Style Starts Here*/
+.contact{
+    height: 50vh;
+    text-align: justify;
+}
+.label-contact{
+    color: #f0ece2;
+    font-size: 80px;
+    text-align:left;
+    margin-left: 350px;
+}
+
+.mysubmit{
+    border: 4px none white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-left: 350px;
+    width: 10%;
+}
+
+.myinput{
+    border: 4px none white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-left: 350px;
+    width: 15%;
+}
+
+textarea{
+    border: 4px solid white;
+    border-radius: 12px;
+    padding: 15px;
+    height: 10vh;
+    margin-left: 350px;
+    width: 10%;
+}
+
+.img-bck{
+    text-align: center;
+}
+
+/* About Us CSS Style Starts Here*/
+.abt-container{
+    height: 20vh;
+    text-align: center;
+}
+.Abt-us{
+
+    text-align: center;
+    color: #f0ece2;
+    font-size: 69px;
+
+}
+
+.intro{
+    text-align: center;
+    color: #f0ece2;
+    font-size: 30px;
+
+}
+.intro-p{
+    text-align: center;
+    color: #f0ece2;
+    font-size: 25px;
+}
+.maps{
+    text-align: center;
+}
+.address{
+ color: #f0ece2;
+}
+.add{
+    color: #f0ece2;
+}
+/*Products CSS Style Starts Here*/
+.parfum-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    position: relative;
+}
+
+.image-container {
+    position: relative; /* Ensure proper positioning */
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-container img{
+    height: 450px;
+    width: 100%;
+}
+.image-container:hover img{
+    transform: scale(1.1); /*Enlarges image when you hover */
+}
+/* targets only the image for hover effect */
+.image-container:hover .image-overlay {
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+.image-overlay p {
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: auto; /* Push text to the bottom */
+}
+.p{
+    padding: 30px;
+    background-color: black;
+    border: solid white;
+    border-radius: 5px;
+    text-align: center;
+} 
+.parfum-2{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+/*Footer Style*/
+.footer-container{
+    padding: 30px;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: black;
+    text-align: center;
+}
+.footer{
+    padding: 10px;
+}
+.spn1{
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    color: #f0ece2;
+    
+}
+
+.links{
+    display: flex;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: end;
+    bottom: 0;
+}
+.instagram-logo{
+    height: 40px;
+    width: 60px;
+}
+.fb-logo{
+    height: 40px;
+    width: 60px;
+}
+.twitter-logo{
+    height: 40px;
+    width: 60px;
+}
