@@ -12,7 +12,7 @@ Visit site <a href="https://okohdaniel11.github.io/Project1/index.html"><u>here.
 - [Features](#features)
 - [Testing](#testing)
 - [Credits](#credits)
-- [License](#license)
+- [Technologies Used](#TechnologiesUsed)
   
 <hr>
 
@@ -86,6 +86,7 @@ This site implements very basic feature.
 - HTML (<a href="https://validator.w3.org/">W3C validator</a>)
   - Error: Bad value images/favicon (1).ico for attribute href on element link: Illegal character in path segment: space is not allowed.
    From line 11, column 9; to line 11, column 75  ```<link rel="icon" href="images/favicon (1).ico" type="image/x-icon">```
+  - W3C CSS Validation Service - no issues.
 
 
 - CSS ([Jigsaw](https://jigsaw.w3.org/css-validator/))
@@ -162,9 +163,22 @@ Alternatively you can **Clone** or **Fork** this repository into your GitHub acc
   
 ### Content
 - Fonts were taken from [W3Schools](https://www.w3schools.com/cssref/css_websafe_fonts.php)
+- Website I used to help me with some of the coding were
+  
+    * [StackOverflow.com](https://stackoverflow.com/)
+  * [W3Schools.com](https://www.w3schools.com/)
+  * [www.toptal.com](https://www.toptal.com/designers/htmlarrows/)
+
+- Map - The map on Aboutus.html uses Google Maps iFrame code.
+- CSS color design were taken from [She Codes Coding tool](https://palettes.shecodes.io/palettes/brown/color)
 
   #### [Back To Top ^ ](#top-of-page) ####
-- CSS color design were taken from [She Codes Coding tool](https://palettes.shecodes.io/palettes/brown/color)
-  
-## License
+## Technologies Used
 
+I used the following technologies, services, and devices to develop, style, deploy, and test the AllSaint website;
+<br>
+* HTML5 - The site was develop using HTML5 markup language.
+* CSS3 - The site was styled and in some cases made responsive using CSS3.
+* Bootstrap - I used the Bootstrap framework for implementing some sections and features.
+* Balsamiq - I used the Balsamiq application to create the website sitemap and webpage wireframes.
+* Responsive Viewer - I used a Chrome Browser Extension called Responsive Viewer to emulate the presentation of the website on multiple device sizes and types.
