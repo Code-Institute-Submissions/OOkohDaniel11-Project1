@@ -26,6 +26,20 @@ The purpose of the website is mainly for people who are fans of the brand allsai
 1. Show information about AllSaints.
 2. Show what Allsaints has produced over time.
 3. Show how to get in contact with the with us.
+   
+## Javascript
+- Created a newsletter that pop up when you first open the page. Inputted two exit ways out of the newsletter form one by clicking the x and the other by background image
+  - It adds your info into the js andd saves it so when you write the same information again an alert pops up saying you have already given that information and will need a new one and it applies to all input
+  - If the submit goes through it opens a blank page to the form dumpsite  
+- ![Newslettter pop up!](images/popupnewsletter)
+- ![Alert!](images/errormsg)
+- ![Form Dump!](images/formdump)
+- Added a back to the top arrow. when user scroll more than 20px on home page and products page it pops up but if not it will stay hidden
+  - I got the function off w3Schools and  the symbols off toptal.com
+- ![Arrow Button!}(images/scrollup)
+- Added a slideshow of images so when you slick on the next or prev button it goes to the other slide
+  - next button is not working properly will be fixed
+- ![Js Slideshow!](images/JSslideshow)
 
 ## Features
 This site implements very basic feature.
