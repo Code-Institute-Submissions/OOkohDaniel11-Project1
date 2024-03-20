@@ -2,6 +2,9 @@ body{
     margin: 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    min-height: max-content;
+    min-width: fit-content;
+    padding: .5rem;
 
 }
 /*Index Css Style Starts here*/
@@ -51,18 +54,19 @@ body{
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: 0.5s;
+    transition: 0.5s;/*ensures the underline comes out in .5sec when you hover over the text*/
 }
 .navbar ul li:hover::after{
     width: 100%;
 }
-/**/
+/*Heading 1 and pargraph */
 .H1{
     text-align: left;
     font-size: 40px;
     color: #f0ece2;
     margin: 10px 80px 10px 80px;
 }
+
 .paragraph1{
     
     text-align: justify;
@@ -70,30 +74,33 @@ body{
     color: #f0ece2;
     margin: 10px 80px 10px 80px;
 }
-/**/
+/*image is in a flex-box plus paragrapgh */
 .fragranceimg{
-    
     display: flex;
-    
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
     
 }
-.img1.frg-summarry{
-    flex: 1;
-    align-items: center;
-}
-.img1{
-    height: 500px;
-    width: fit-content;
-    margin: 10px 80px 10px 250px;
 
+.img1.frg-summarry{
+    flex: 1;  
 }
+
+.img1{
+    height: 50vh;
+    max-width: 100%;
+}
+
 .frg-summarry{
     text-align: justify;
     font-size: x-large;
     color: #f0ece2;
-    margin: 10px 80px 5px 100px;
+    font-weight: bold;
+   
 }
-/**/
+/*Heading 2 and paragraph*/
 
 .allsaints-fashion{
     text-align: left;
@@ -107,9 +114,13 @@ body{
    font-size: x-large;
    color: #f0ece2;
    margin: 10px 80px 10px 80px;
+   font-weight: bold;
 }
+
 .imgcontainer{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     
 }
 .fashion-p .sliders{
@@ -120,7 +131,7 @@ body{
 /*start of slidshow of pictures */
 .sliders{
     position: relative;
-    width: 100%;
+    max-width: 100%;/*applied max width to make sure it stays within the flexbox*/
     margin: auto;
     overflow: hidden;
 }
@@ -166,7 +177,7 @@ img.displaySlide{
     margin-left: 90px;
     font-size: large;
     color: #f0ece2;
-    margin: 10px 50px 10px 250px;
+    
 }
 /*inputs of newsletter form */
 .fllname-1{
@@ -225,7 +236,7 @@ input.number{
 }
 button.nws-form{
     color: gray;
-    width: 10%;
+    max-width: 100%;
     padding: 10px;
     border-radius: 20px;
     font-size: 15px;
@@ -235,6 +246,7 @@ button.nws-form{
     cursor: pointer;
     padding: 30px;
 }
+/*position the pop up in the middle*/
 .pop-up{
     position: fixed;
     top: 50%;
@@ -251,7 +263,7 @@ button.nws-form{
 .pop-up.active{
     transform: translate(-50%, -50%) scale(1);
 }
-/**/
+/*header and close button of pop up*/
 .popup-header{
     display: flex;
     padding: 10px 15px;
@@ -267,7 +279,7 @@ button.nws-form{
 button.close-btn{
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer;/*when hover over the close button switches mouse defualt to cursur*/
     background: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -296,7 +308,7 @@ button.close-btn{
     text-transform: uppercase;
     
 }
-/*ar*/
+/*arrow back to the top*/
 #backtoTop{
     display: none;
     position: fixed;
@@ -394,6 +406,7 @@ textarea{
 /*Products CSS Style Starts Here*/
 .parfum-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 5px;
     position: relative;
@@ -446,14 +459,19 @@ textarea{
     border: solid white;
     border-radius: 5px;
     text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #f0ece2;
 } 
 .parfum-2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 5px;
+    margin: 0 auto;
 }
 /*Footer Style*/
 .footer-container{
+    
     padding: 30px;
     justify-content: space-between;
     margin: 0 auto;
@@ -462,6 +480,7 @@ textarea{
 }
 .footer{
     padding: 10px;
+    
 }
 .spn1{
     padding: 20px;
@@ -489,4 +508,96 @@ textarea{
 .twitter-logo{
     height: 40px;
     width: 60px;
+}
+
+
+@media all and (min-width:960px) and (max-width: 1024px) {
+    
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+  
+@media all and (min-width:769px) and (max-width: 800px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+  
+@media all and (min-width:569px) and (max-width: 768px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+  
+@media all and (min-width:481px) and (max-width: 568px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+  
+@media all and (min-width:321px) and (max-width: 480px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
+}
+  
+@media all and (min-width:0px) and (max-width: 320px) {
+    /* put your css styles in here */
+    body{
+        margin: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        min-height: max-content;
+        min-width: fit-content;
+        padding: .5rem;
+    
+    }
 }
