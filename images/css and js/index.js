@@ -18,21 +18,23 @@ overlay.addEventListener('click', () => {
 
 closePopUpButtons.forEach(button => {
     button.addEventListener('click', () => {
-        const popup = button.closest('.pop-up') // applies a funtion on the x button when we close it, it closes
+        const popup = button.closest('.pop-up') // applies a function on the x button when we close it, it closes
         closePopUp(popup)
     })
 })
+//when user opens popup it adds the active class
 function openPopUp(popup){
     if (popup == null) return
     popup.classList.add('active')
     overlay.classList.add('active')
 }
+//when user exits popup it removes the active class
 function closePopUp(popup){
     if (popup == null) return
     popup.classList.remove('active')
     overlay.classList.remove('active')
 }
-
+//Newsletter js
 //when user fills out the form on homepage it will be added on here
 const nameS = [""]
 let emailS = [""]
@@ -68,6 +70,9 @@ function onSubmittion(event){
     
     
 }
+console.log(nameS)
+console.log(emailS)
+console.log(numberS)
 // images slider on homepage
 const slides = document.querySelectorAll(".slides img"); //getting the images in the div with class slides 
 let slideIndex = 0; //gets the first line 
@@ -86,19 +91,13 @@ function initializeSlider(){
 function showSlide(index){
 
     //when you reach the end of image it resets it back to the start 
-    if(index >= slides.length){
-            slideIndex = 0;
-
-    }else if(index < 0 ){
-            slideIndex = slides.length - 1;
-
-    }
+    slideIndex = (index + slides.length) % slides.length;
 
     //whe clicking on the next button it removes the class display slide and add it to the next image that will come up
     slides.forEach(slide => {
         slide.classList.remove("displaySlide"); 
     });
-    slides[slideIndex].classList.add("displaySlide");
+    slides[slideIndex].classList.add("displaySlide");// Add displaySlide class to the current slide
 }
 function prevSlide(){
     clearInterval(intervalId);
@@ -106,19 +105,20 @@ function prevSlide(){
     showSlide(slideIndex);
 }
 function nextSlide(){
-    slideIndex++;
-    showSlide[slideIndex];
+    slideIndex++ ;//Move to next slide 
+    showSlide[slideIndex];//Show next slide
 }
+//Arrow js
 //function for when you start srolling it pops up for you to go back to the top
 let thisbutton =  document.getElementById('backtoTop');
-//when user scrolls 20 px it will pop up and show the button
+//when user scrolls 20 px  arrow button will pop up and show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction(){
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         thisbutton.style.display = "block";
     }else{
-        thisbutton.style.display = "none";
+        thisbutton.style.display = "none";//when user is at the top it displays none 
     }
 }
 //when user clicks on button it goes to the top 
@@ -126,3 +126,12 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+//toggle button event
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navBarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navBarLinks.classList.toggle('active')
+})

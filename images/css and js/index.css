@@ -9,7 +9,7 @@ body{
 }
 /*Index Css Style Starts here*/
 /*banner location line 14 on index html*/
-.banner{
+.navbar{
     text-align: right;
     background-color: black;
     display: flex;
@@ -21,7 +21,7 @@ body{
     
 }
 /*nav bar style */
-.navbar{
+.navbar-links{
     width: 100%;
     margin: auto;
     padding: 25px 0;
@@ -33,20 +33,20 @@ body{
     justify-content: space-between;
 
 }
-.navbar ul li{
+.navbar-links ul li{
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     position: relative;
 }
 /*no decoration added to it and made text uppercase */
-.navbar ul li a{
+.navbar-links ul li a{
     text-decoration: none;
     color: #f0ece2;
     text-transform: uppercase;
 }
 /*applies a underline on text but is hidden and transition out when you hover over text*/
-.navbar ul li::after{
+.navbar-links ul li::after{
     content: '';
     height: 3px;
     width: 0;
@@ -56,8 +56,24 @@ body{
     bottom: -10px;
     transition: 0.5s;/*ensures the underline comes out in .5sec when you hover over the text*/
 }
-.navbar ul li:hover::after{
+.navbar-links ul li:hover::after{
     width: 100%;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #f0ece2;
+    border-radius: 15px;
 }
 /*Heading 1 and pargraph */
 .H1{
@@ -330,46 +346,81 @@ button.close-btn{
 
 
 /*Contact Css Style Starts Here*/
-.contact{
-    height: 50vh;
+
+/*container for chat,email and help center support*/
+.help-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.help-box{
+    background-color: black;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+.help-heading{
+    font-weight: bold;
+    color: #f0ece2;
+    text-decoration: underline;
+}
+.help-p{
+    color: #f0ece2;
     text-align: justify;
+}
+.help-link{
+    text-decoration: underline;
+    color: #f0ece2;
+    font-weight: bold;
+}
+/*flex contact with image*/
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.contact-form .contact-bckground{
+    flex: 1;
+}
+.contact-form{
+    right:0;
 }
 .label-contact{
     color: #f0ece2;
-    font-size: 80px;
-    text-align:left;
-    margin-left: 350px;
+    font-size: 60px;
+    margin-left: 15%;
 }
 
 .mysubmit{
     border: 4px none white;
     border-radius: 12px;
     padding: 25px;
-    margin-left: 350px;
-    width: 10%;
+    cursor: pointer;margin-left: 15%;
 }
 
 .myinput{
     border: 4px none white;
     border-radius: 12px;
-    padding: 15px;
-    margin-left: 350px;
-    width: 15%;
+    padding: 15px;margin-left: 15%;
 }
 
 textarea{
     border: 4px solid white;
     border-radius: 12px;
     padding: 15px;
-    height: 10vh;
-    margin-left: 350px;
-    width: 10%;
+    height: 10vh;margin-left: 15%;
 }
-
-.img-bck{
-    text-align: center;
+.background-image{
+   max-width: 50%;
+   height: fit-content;
+   margin: 0% auto;
+   padding: 20px;
 }
-
 /* About Us CSS Style Starts Here*/
 .abt-container{
     height: 20vh;
@@ -472,7 +523,7 @@ textarea{
 /*Footer Style*/
 .footer-container{
     
-    padding: 30px;
+    padding: 1%;
     justify-content: space-between;
     margin: 0 auto;
     background-color: black;
@@ -484,7 +535,6 @@ textarea{
 }
 .spn1{
     padding: 20px;
-    margin: 20px 20px 20px 20px;
     color: #f0ece2;
     
 }
@@ -498,15 +548,15 @@ textarea{
     bottom: 0;
 }
 .instagram-logo{
-    height: 40px;
+    height: 5vh;
     width: 60px;
 }
 .fb-logo{
-    height: 40px;
+    height: 5vh;
     width: 60px;
 }
 .twitter-logo{
-    height: 40px;
+    height: 5vh;
     width: 60px;
 }
 
@@ -561,6 +611,30 @@ textarea{
         padding: .5rem;
     
     }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
 }
   
 @media all and (min-width:481px) and (max-width: 568px) {
@@ -573,6 +647,30 @@ textarea{
         min-width: fit-content;
         padding: .5rem;
     
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
     }
 }
   
@@ -587,6 +685,30 @@ textarea{
         padding: .5rem;
     
     }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
 }
   
 @media all and (min-width:0px) and (max-width: 320px) {
@@ -599,5 +721,29 @@ textarea{
         min-width: fit-content;
         padding: .5rem;
     
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
     }
 }
