@@ -7,47 +7,70 @@
         <meta name="keywords" content="Perfumes, craft, maker">
         <meta name="author" content="Daniel Okoh">
         <title>All Saints</title>
-        <link rel="stylesheet" href="images/css and js/index.css">
-        <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="favicon (1).ico" type="image/x-icon">
     </head>
     <body>
-
-        <div class="banner">
-            <br>
-            <a href="index.html" aria-label="">
-                <img src="images/AllSaints-logo.png" alt="All Saints logo" class="logo">
+        <!--Navigation-->
+        <nav class="navbar">
+            <div>
+                <a href="index.html" aria-label="">
+                    <img src="AllSaints-logo.png" alt="All Saints logo" class="logo">
+                </a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <!--Navigations-->
-            <nav class="navbar">
+            <div class="navbar-links">
                 <ul>
                     <li><a href="index.html" aria-label="">Home</a></li>
                     <li><a href="aboutus.html" aria-label="">About Us</a></li>
                     <li><a href="contact.html" aria-label="">Contact</a></li>
                     <li><a href="products.html" aria-label="">Products</a></li>
                 </ul>
-                
-            </nav>
+            </div>
+        </nav>
+        <!--Help links container-->
+        <div class="help-container">
+            <div class="help-box">
+                <h2 class="help-heading">Chat Support</h2>
+                <p class="help-p">How can we help you? Our chat support available 9:00am - 8:00pm every day. Just a click away</p>
+                <a href="" class="help-link">Chat Support &#x2192;</a>
+            </div>
+            <div class="help-box">
+                <h2 class="help-heading">Email Support</h2>
+                <p class="help-p">Prefer email? Send us an email and we will get back to you soon.</p>
+                <a href="" class="help-link">Send us an Email &#x2192;</a>
+            </div>
+            <div class="help-box">
+                <h2 class="help-heading">Help Center</h2>
+                <p class="help-p">Looking for additional help visit our help center just a click away, open 24/7. </p>
+                <a href="" class="help-link">Visit Help Center &#x2192;</a>
+            </div> 
         </div>
+        <br><br><br><br>
         <!--Form contact-->
         <div class="contact">
-            <form action="https://formdump.codeinstitute.net/" target="_blank" method="POST" id="form-2">
-                <h1 class="label-contact"><u>Get In</u> Touch</h1>
-                
-                <input type="text" id="text" name="text" placeholder="Full Name*" class="myinput" required>
-                <br><br>
-                <input type="tel" id="phone" name="phone" placeholder="Phone Number*" class="myinput"  required>
-                <br><br>
-                <input type="email" id="email" name="email" placeholder="Email Address*" class="myinput" required>
-                <br><br>
-                <textarea placeholder="Additional text can be entered here"></textarea>
-                <br><br>
-                <input type="submit" class="mysubmit" value="Submit!">
-            </form>
+            
+            <div class="contact-form">
+                <form action="https://formdump.codeinstitute.net/" target="_blank" method="POST" id="form-2">
+                    <h2 class="label-contact"><u>Get In</u> Touch</h2>
+                    <input type="text" id="text" name="text" placeholder="Full Name*" class="myinput" required>
+                    <br><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number*" class="myinput"  required>
+                    <br><br>
+                    <input type="email" id="email" name="email" placeholder="Email Address*" class="myinput" required>
+                    <br><br>
+                    <textarea placeholder="Additional text can be entered here"></textarea>
+                    <br><br>
+                    <input type="submit" class="mysubmit" value="Submit!">
+                </form>
+            </div>
+            <img src="2016-08-25-UK-NEW-SEASON-WW.jpg" alt="Images of allsaints models" class="background-image">  
         </div>
-        <br>
-        <br>
-        <br>
-        
+        <br><br><br><br><br><br>
         <!--Footer-->
         <div class="footer-container">
             <div class="footer-left">
@@ -58,14 +81,15 @@
                     <br> 
                     <div class="links">
                         <span class="spn2">
-                            <a href="https://www.facebook.com/allsaints/" target="_blank"><img src="images/fb.png" alt="Facebook logo" class="fb-logo"></a>
-                            <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="twitter logo" class="twitter-logo"></a>
-                            <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><img src="images/ig.png" alt="Instagram Logo" class="instagram-logo"></a>
+                            <a href="https://www.facebook.com/allsaints/" target="_blank"><img src="fb.png" alt="Facebook logo" class="fb-logo"></a>
+                            <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="twitter.png" alt="twitter logo" class="twitter-logo"></a>
+                            <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><img src="ig.png" alt="Instagram Logo" class="instagram-logo"></a>
                         </span>
                     </div>
                     
                 </footer>   
             </div>
-      </div> 
+      </div>
+      <script src="indexpagesfunction2.js"></script> 
     </body>
 </html>

@@ -7,30 +7,36 @@
         <meta name="keywords" content="Perfumes, craft, maker">
         <meta name="author" content="Daniel Okoh">
         <title>All Saints</title>
-        <link rel="stylesheet" href="images/css and js/index.css">
-        <link rel="icon" href="images/favicon (1).ico" type="image/x-icon">
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="favicon (1).ico" type="image/x-icon">
     </head>
     <body>
         <!--Navigation-->
-        <div class="banner">
-            <br>
-            <a href="index.html" aria-label="">
-                <img src="images/AllSaints-logo.png" alt="All Saints logo" class="logo">
+        <nav class="navbar">
+            <div>
+                <a href="index.html" aria-label="">
+                    <img src="AllSaints-logo.png" alt="All Saints logo" class="logo">
+                </a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </a>
-            <nav class="navbar">
+            <div class="navbar-links">
                 <ul>
                     <li><a href="index.html" aria-label="">Home</a></li>
                     <li><a href="aboutus.html" aria-label="">About Us</a></li>
                     <li><a href="contact.html" aria-label="">Contact</a></li>
                     <li><a href="products.html" aria-label="">Products</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
         <br>
         <br>
         <br>
     <!---Header and paragraph-->
-            <div class="shortsummary1">
+            <div id="shortsummary1">
                 <h1 class="H1" aria-label=""><u>Al</u>l Saints</h1>
                     <p class="paragraph1"><b>
                         Founded in 1994 by Stuart Trevor and Kait Bolongaro, 
@@ -49,11 +55,11 @@
           <br>
           <br>
           <!--Image and Summarry-->
-          <div class="fragranceimg" >
-                    <a href="products.html">
-                        <img src="images/http___static.theiconic.com.au_p_allsaints-6936-2232861-4.jpg" alt="Image of fragrance collection" aria-label="" class="img1">
+          <div class="fragranceimg" id="frag" >
+                    <a href="products.html" target="_blank">
+                        <img src="http___static.theiconic.com.au_p_allsaints-6936-2232861-4.jpg" alt="Image of fragrance collection" aria-label="" class="img1" loading="eager">
                     </a>
-                <p class="frg-summarry"><b>
+                <p class="frg-summarry">
                     Designer Allsaints has 6 perfumes in its fragrance base. 
                     <br>Allsaints is a new fragrance brand. The earliest edition 
                     <br>was created in 2018 and the newest is from 2021. 
@@ -61,12 +67,12 @@
                     <br>Overall, these fragrances smell niche and high end for the price, 
                     <br>and I believe there is something for everyone, 
                     <br>since they're all different from each other.
-                </b></p>
+                </p>
           </div>
           <br>
           <br>
           <!--AllSaints Fashion-->
-          <div class="indexh2">
+          <div class="indexh2" id="fashion">
             <h2 class="allsaints-fashion"><u>All</u>Saints Fashion</h2>
             <p class="paragraph2">
                 By mid-2004, AllSaints had expanded to 10 stores in the UK.
@@ -82,7 +88,7 @@
           </div>
           <br>
           <!--slide shown images and paragraph-->
-          <div class="imgcontainer">
+          <div class="imgcontainer" id="slides">
             <p class="fashion-p"><b>
                 London-based fashion retailer AllSaints made its name designing   
                 <br>vintage-inspired garments with a modern, rock ’n’ roll sensibility. 
@@ -99,10 +105,10 @@
             </b></p>
             <div class="sliders">
                     <div class="slides">
-                             <img class="slide" src="images/AllSaints-Spitalfields-Michigan-Avenue-Chicago-101.jpg" alt="Image of Clothes by All Saint #1">
-                            <img class="slide" src="images/All-Saintsshop.jpeg" alt="Image of Clothes by All Saint #2">
-                            <img class="slide" src="images/WHITE_CITY.jpg" alt="Image of Clothes by All Saint #3">
-                            <img class="slide" src="images/AllSaints-4.jpg" alt="Image of Clothes by All Saint #4">
+                             <img class="slide" src="AllSaints-Spitalfields-Michigan-Avenue-Chicago-101.jpg" alt="Image of Clothes by All Saint #1">
+                            <img class="slide" src="All-Saintsshop.jpeg" alt="Image of Clothes by All Saint #2">
+                            <img class="slide" src="WHITE_CITY.jpg" alt="Image of Clothes by All Saint #3">
+                            <img class="slide" src="AllSaints-4.jpg" alt="Image of Clothes by All Saint #4">
                     </div>
                     <button class="prev" onclick="prevSlide()">&#10094;</button>
                     <button class="next" onclick="nextSlide()">&#10095;</button>
@@ -166,14 +172,15 @@
                     <br> 
                     <div class="links">
                         <span class="spn2">
-                            <a href="https://www.facebook.com/allsaints/" target="_blank"><img src="images/fb.png" alt="Facebook logo" class="fb-logo"></a>
-                            <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="twitter logo" class="twitter-logo"></a>
-                            <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><img src="images/ig.png" alt="Instagram Logo" class="instagram-logo"></a>
+                            <a href="https://www.facebook.com/allsaints/" target="_blank"><img src="fb.png" alt="Facebook logo" class="fb-logo"></a>
+                            <a href="https://twitter.com/AllSaintsLive?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="twitter.png" alt="twitter logo" class="twitter-logo"></a>
+                            <a href="https://www.instagram.com/allsaints/?hl=en" target="_blank"><img src="ig.png" alt="Instagram Logo" class="instagram-logo"></a>
                         </span>
                     </div>
+                    
                 </footer>   
             </div>
       </div>  
-    <script src="images/css and js/index.js"></script>
+    <script src="index.js"></script>
     </body>
 </html> 
