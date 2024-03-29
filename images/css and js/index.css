@@ -2,7 +2,7 @@ body{
     margin: 15px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    min-height: max-content;
+    min-height: fit-content;
     min-width: fit-content;
     padding: .5rem;
 
@@ -15,9 +15,14 @@ body{
     display: flex;
 }
 /*logo css*/
+.logo-container{
+    text-align: center;
+
+}
 .logo{
     width: fit-content;
-    height: 20vh;
+    height: 10vh;
+    padding: 5px;
     
 }
 /*nav bar style */
@@ -423,25 +428,23 @@ textarea{
 }
 /* About Us CSS Style Starts Here*/
 .abt-container{
-    height: 20vh;
+    height: fit-content;
     text-align: center;
 }
 .Abt-us{
-
-    text-align: center;
     color: #f0ece2;
     font-size: 69px;
 
 }
-
-.intro{
+.intro-container{
     text-align: center;
+}
+.intro{
     color: #f0ece2;
     font-size: 30px;
 
 }
 .intro-p{
-    text-align: center;
     color: #f0ece2;
     font-size: 25px;
 }
@@ -518,7 +521,8 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 auto;
+    padding: 5px;
+    position: relative;
 }
 /*Footer Style*/
 .footer-container{
@@ -567,7 +571,7 @@ textarea{
         margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -580,7 +584,7 @@ textarea{
         margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -593,7 +597,7 @@ textarea{
         margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -603,10 +607,9 @@ textarea{
 @media all and (min-width:569px) and (max-width: 768px) {
     /* put your css styles in here */
     body{
-        margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -625,25 +628,30 @@ textarea{
     .navbar-links ul {
         flex-direction: column;
         width: 100%;
+        padding: 30px;
     }
     .navbar-links li{
         text-align: center;
+        padding: 5px;
+        
     }
     .navbar-links li a {
         padding: .5rem 1rem;
     }
     .navbar-links.active{
         display: flex;
+        text-align: center;
+        
     }
+    #location{display: none;}
 }
   
 @media all and (min-width:481px) and (max-width: 568px) {
     /* put your css styles in here */
     body{
-        margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -662,25 +670,30 @@ textarea{
     .navbar-links ul {
         flex-direction: column;
         width: 100%;
+        padding: 30px;
     }
     .navbar-links li{
         text-align: center;
+        padding: 5px;
+        
     }
     .navbar-links li a {
         padding: .5rem 1rem;
     }
     .navbar-links.active{
         display: flex;
+        text-align: center;
+        
     }
+    #location{display: none;}
 }
   
 @media all and (min-width:321px) and (max-width: 480px) {
     /* put your css styles in here */
     body{
-        margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -695,29 +708,35 @@ textarea{
     .navbar{
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px;
     }
     .navbar-links ul {
         flex-direction: column;
         width: 100%;
+        padding: 30px;
     }
     .navbar-links li{
         text-align: center;
+        padding: 5px;
+        
     }
     .navbar-links li a {
         padding: .5rem 1rem;
     }
     .navbar-links.active{
         display: flex;
+        text-align: center;
+        
     }
+    #location{display: none;}
 }
   
 @media all and (min-width:0px) and (max-width: 320px) {
     /* put your css styles in here */
     body{
-        margin: 15px;
         font-family: Arial, Helvetica, sans-serif;
         background-color: black;
-        min-height: max-content;
+        min-height: fit-content;
         min-width: fit-content;
         padding: .5rem;
     
@@ -736,14 +755,20 @@ textarea{
     .navbar-links ul {
         flex-direction: column;
         width: 100%;
+        padding: 30px;
     }
     .navbar-links li{
         text-align: center;
+        padding: 5px;
+        
     }
     .navbar-links li a {
         padding: .5rem 1rem;
     }
     .navbar-links.active{
         display: flex;
+        text-align: center;
+        
     }
+    #location{display: none;}
 }
